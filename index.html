@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill_test1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ToDo-List</h1>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="What to do next?" />
+        <input type="submit" id="add-button" value="ADD" />
+      </form>
+    </header>
+
+    <main>
+      <section>
+        <h2>Tasks to do</h2>
+        <div id="taskContainer" class="taskContainer">
+          <div class="taskInputMainContainer" id="task">
+            <input
+              type="text"
+              class="task-description"
+              value="A new task to be filled"
+              readonly
+            />
+            <span class="options">
+              <button class="edit">Edit</button>
+              <button class="remove">Remove</button>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" />
+  </body>
+</html>

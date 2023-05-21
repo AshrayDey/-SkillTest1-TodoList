@@ -1,0 +1,158 @@
+*
+{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body
+{   
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(rgb(53, 180, 229) 20%, rgb(46, 56, 212) 91%);
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+     
+}
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+header
+{
+    height: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+header h1
+{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(0, 0, 3);
+    border: solid rgb(14, 2, 26);
+    font-size: 4rem;
+    margin: 0 auto 40px auto;
+    width: fit-content;
+}
+#task-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#task-input
+{
+    flex: 1 1 0%;
+    background:rgb(44, 46, 165); 
+    border-radius: 1rem;
+    padding:1rem;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    border: solid 2px;
+    max-width: 30rem;
+    width: 80%;
+}
+#task-input::placeholder
+{
+    color:aliceblue ;
+}
+#add-button
+{
+    font-size: 1.3rem;
+    height: 2.5rem;
+    width: 4rem;
+    font-weight: 800;
+    background-image:   linear-gradient(57deg, rgb(212, 102, 117) 0%, rgb(230, 24, 172) 100%);
+    border: none; 
+    
+    border-radius: 1rem;
+}
+#add-button:hover{
+    opacity: 0.8;
+}
+#add-button:active
+{
+    opacity: 0.5;
+}
+/* ------------------Main BODY------------------------- */
+main
+{
+    flex: 1 1 0%;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin:0 auto;
+}
+
+.taskContainer{
+    display: grid;
+    gap: 1rem;
+}
+
+#task 
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffdb58;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+ .task-description
+{
+    color: rgb(5, 121, 30);
+    font-size: 1.3rem;
+    font-weight: 900;
+    outline: none;
+}
+h2
+{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.taskInputMainContainer .task-description:not(:read-only)
+{
+    color: red;
+}
+#task .task .options
+{
+    display: flex;
+    margin:0 -1rem
+}
+ .options button
+ {
+    cursor: pointer;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: 0.8s;
+    text-transform: uppercase;
+    
+ }
+ .options button:hover{
+    opacity: 0.8;
+    color: rgb(238, 81, 8);
+}
+.options button:active
+{
+    opacity: 0.5;
+}
+
+.options > .edit
+{
+    color: rgb(140, 3, 231);
+    text-shadow: 1px 1px rgb(12, 1, 2);
+    
+}
+.options > .remove
+{
+     color: rgb(231, 3, 3);
+    text-shadow: 1px 1px rgb(12, 1, 2);
+}
